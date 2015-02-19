@@ -13,13 +13,16 @@
 @implementation Contador {
     int boy;
     int girl;
+    int total;
+    
 }
-
+static Contador *_instancia;
 -(id)init {
     self = [super init];
     if (self) {
         boy = 0;
         girl = 0;
+        _instancia = nil;
     }
     return self;
 }
@@ -39,6 +42,18 @@
     return girl;
 }
 
+-(int)getTotal
+{
+     return total = [self getBoys] + [self getGirls];
+}
+
++ (Contador *) instancia {
+    
+    if (_instancia == nil) {
+        _instancia = [[Contador alloc] init];
+    }
+    return _instancia;
+}
 
 
 @end

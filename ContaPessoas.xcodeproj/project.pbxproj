@@ -19,6 +19,7 @@
 		27A199D11A94B501008DC684 /* boy.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A199D01A94B501008DC684 /* boy.png */; };
 		27A199D31A94D1FA008DC684 /* Contador.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A199D21A94D1FA008DC684 /* Contador.m */; };
 		27A199D61A94D821008DC684 /* ContadorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A199D51A94D821008DC684 /* ContadorTests.m */; };
+		E37FFAB51A9658C60061174F /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FFAB41A9658C60061174F /* Singleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		27A199D21A94D1FA008DC684 /* Contador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contador.m; sourceTree = "<group>"; };
 		27A199D41A94D22B008DC684 /* Contador.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contador.h; sourceTree = "<group>"; };
 		27A199D51A94D821008DC684 /* ContadorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContadorTests.m; sourceTree = "<group>"; };
+		E37FFAB31A9658C60061174F /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		E37FFAB41A9658C60061174F /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 			children = (
 				27A199A41A94B2A8008DC684 /* Info.plist */,
 				27A199A51A94B2A8008DC684 /* main.m */,
+				E37FFAB31A9658C60061174F /* Singleton.h */,
+				E37FFAB41A9658C60061174F /* Singleton.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				27A199AF1A94B2A8008DC684 /* SecondViewController.m in Sources */,
 				27A199A91A94B2A8008DC684 /* AppDelegate.m in Sources */,
 				27A199AC1A94B2A8008DC684 /* FirstViewController.m in Sources */,
+				E37FFAB51A9658C60061174F /* Singleton.m in Sources */,
 				27A199D31A94D1FA008DC684 /* Contador.m in Sources */,
 				27A199A61A94B2A8008DC684 /* main.m in Sources */,
 			);
@@ -438,6 +444,7 @@
 				27A199C81A94B2A8008DC684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27A199C91A94B2A8008DC684 /* Build configuration list for PBXNativeTarget "ContaPessoasTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				27A199CB1A94B2A8008DC684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

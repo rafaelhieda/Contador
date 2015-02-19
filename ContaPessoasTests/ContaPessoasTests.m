@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "Contador.h"
+#import "Singleton.h"
 
 @interface ContaPessoasTests : XCTestCase
 
@@ -16,11 +17,19 @@
 
 @implementation ContaPessoasTests
 
+-(void)CriaSingleton
+{
+    Singleton *novoSingleton = [[Singleton alloc]init];
+    Contador *aux = [[Contador alloc]init];
+    aux = (Contador *) novoSingleton;
+    
+}
 
 - (void)testContaMeninos {
     Contador *c = [[Contador alloc] init];
     [c maisUmCueca];
     XCTAssert(([c getBoys] == 1), @"Pass");
+    XCTAssert(([c getGirls] == 0), @"Pass");
 }
 
 - (void)testContaMeninas {

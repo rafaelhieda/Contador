@@ -19,10 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    //contador = [[Contador alloc] init];
+    contador = [Contador instancia];
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
