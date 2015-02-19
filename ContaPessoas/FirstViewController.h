@@ -12,6 +12,6 @@
 
 - (IBAction)clickBoy:(id)sender;
 - (IBAction)clickGirl:(id)sender;
-
+// teste
 @end
 
